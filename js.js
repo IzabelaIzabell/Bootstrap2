@@ -1,8 +1,3 @@
-// bootstrap.min.js
-
-
-
-
 
 let apiUrl="https://picsum.photos/v2/list?limit=10"
 var gallery= $(".galleryApi")
@@ -87,10 +82,6 @@ function load() {
     })
 }
 
-
-
-
-
 next.on('click', function(current_imagies ) {
     var current_imagies = $('#myModal3 div.galleryApi a');
     console.log(current_imagies)
@@ -109,16 +100,13 @@ next.on('click', function(current_imagies ) {
    let name_footer = $(".modal-footer div")
    name_footer.text(current_class);
    $(current_imagies[index]).addClass('visible');
-   
-
-     console.log($(this).attr('class'));
+   console.log($(this).attr('class'));
 
    
 });
 
 prev.on('click', function() {
     var current_imagies = $('#myModal3 div.galleryApi a');
-
     $(current_imagies[index]).removeClass('visible');
    index--;
    if(index < 0){
@@ -130,9 +118,6 @@ prev.on('click', function() {
    name_footer.text(current_class);
    $(current_imagies[index]).addClass('visible');
 });
-
-
-
 
 // footer
 let current_date = new Date()
